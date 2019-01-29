@@ -56,7 +56,7 @@ public abstract class TestBase {
         report.setSystemInfo("Environment", "Staging");
         report.setSystemInfo("Browser", ConfigurationReader.getProperty("browser"));
         report.setSystemInfo("OS", System.getProperty("os.name"));
-        report.setSystemInfo("QA Engineer", "Tysons_8");
+        report.setSystemInfo("QA Engineers", "Tysons_8");
 
         htmlReporter.config().setDocumentTitle("Brite Erp Reports");
         htmlReporter.config().setReportName("Brite Erp Automated Test Reports");
