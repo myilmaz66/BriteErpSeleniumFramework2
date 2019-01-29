@@ -58,8 +58,8 @@ public abstract class TestBase {
         report.setSystemInfo("OS", System.getProperty("os.name"));
         report.setSystemInfo("QA Engineers", "Tysons_8");
 
-        htmlReporter.config().setDocumentTitle("Brite Erp Reports");
-        htmlReporter.config().setReportName("Brite Erp Automated Test Reports");
+        htmlReporter.config().setDocumentTitle("Brite Erp Point of Sale Reports");
+        htmlReporter.config().setReportName("Brite Erp Point Of Sale Automated Test Reports");
 
 //        htmlReporter.config().setTheme(Theme.DARK);
 
