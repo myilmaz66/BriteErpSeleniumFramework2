@@ -59,7 +59,11 @@ public abstract class TestBase {
         report.setSystemInfo("QA Engineers", "Tysons_8");
 
         htmlReporter.config().setDocumentTitle("Brite Erp Point of Sale Reports");
+
         htmlReporter.config().setReportName("Brite Erp Point of Sale Automated Test Reports");
+
+
+
 
 //        htmlReporter.config().setTheme(Theme.DARK);
 
@@ -71,3 +75,4 @@ public abstract class TestBase {
     }
 }
 
+// MIJAT RATKOVIC
