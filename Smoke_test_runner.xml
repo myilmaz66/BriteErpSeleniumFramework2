@@ -1,14 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="WebOrders" verbose="2">
 
-    <!--<test name="WebOrders Automated Tests">-->
-    <!--<classes>-->
-    <!--<class name="com.weborders.tests.functional_tests.login.ErrorMessageValidationTest">-->
-    <!--<methods>-->
-    <!--<exclude name="blankPassword"/>-->
-    <!--</methods>-->
-    <!--</class>-->
-    <!--</classes>-->
-    <!--</test>-->
+    <test name="TEST TEST">
+        <classes>
+            <class name="com.briterp.tests.smoke_test.SmokeTest">
+
+            </class>
+        </classes>
+    </test>
 
 </suite>
