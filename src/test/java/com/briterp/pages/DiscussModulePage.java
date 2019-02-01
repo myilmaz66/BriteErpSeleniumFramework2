@@ -15,4 +15,9 @@ public class DiscussModulePage {
 
     @FindBy (xpath = "//*[@data-menu='logout']")
     public WebElement signOutButton;
+
+    @FindBy(xpath = "//*[@data-menu-xmlid='point_of_sale.menu_point_root']")
+    public WebElement pointOfSale;
+
+
 }

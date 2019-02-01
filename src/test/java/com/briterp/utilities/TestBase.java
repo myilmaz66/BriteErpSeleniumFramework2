@@ -6,6 +6,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.briterp.pages.DiscussModulePage;
 import com.briterp.pages.LoginPage;
 import com.briterp.pages.OdooFirstPage;
+import com.briterp.pages.PointOfSale;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -18,8 +19,9 @@ public abstract class TestBase {
     //protected Pages pages;
     protected OdooFirstPage odooFirstPage;
     protected LoginPage loginPage;
-
     protected DiscussModulePage discussModulePage;
+    protected PointOfSale pointOfSale;
+
 
     protected static ExtentReports report;
     private static ExtentHtmlReporter htmlReporter;
@@ -31,6 +33,8 @@ public abstract class TestBase {
         driver = Driver.getDriver();
         odooFirstPage = new OdooFirstPage();
         loginPage = new LoginPage();
+        pointOfSale = new PointOfSale();
+
 
         discussModulePage = new DiscussModulePage();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -49,7 +53,7 @@ public abstract class TestBase {
         } else if (result.getStatus() == ITestResult.SKIP) {
             extentLogger.skip("Test Case Skipped: " + result.getName());
         }
-        Driver.closeDriver();
+//        Driver.closeDriver();
     }
 
     @BeforeTest(alwaysRun = true)
