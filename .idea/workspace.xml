@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54417307-292f-41c1-b703-679ccc3085a3" name="Default Changelist" comment="" />
+    <list default="true" id="54417307-292f-41c1-b703-679ccc3085a3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/briterp/pages/OrdersPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BriteErpSeleniumFramework2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BriteErpSeleniumFramework2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/briterp/pages/PointOfSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briterp/pages/PointOfSale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/briterp/pages/ex1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/briterp/tests/functional_test/reporting/orders/ex8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briterp/tests/functional_test/reporting/orders/orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/briterp/tests/smoke_test/SmokeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briterp/tests/smoke_test/SmokeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/briterp/utilities/Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briterp/utilities/Pages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/briterp/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briterp/utilities/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/briterp/pages/PointOfSale.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/briterp/pages/PointOfSale.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/briterp/pages/ex1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/briterp/tests/functional_test/reporting/orders/ex8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/briterp/tests/smoke_test/SmokeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/briterp/tests/smoke_test/SmokeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/briterp/utilities/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/briterp/utilities/TestBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/report.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,33 +30,35 @@
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="839135565">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.25" value="1" />
-          <entry key="project.opened" value="4" />
-        </counts>
-      </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="9" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="5" />
+          <entry key="properties" value="1" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="9" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="5" />
+          <entry key="Properties" value="1" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="13" />
+          <entry key="java" value="208" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13" />
+          <entry key="JAVA" value="208" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -45,24 +66,111 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/utilities/BrowserUtilities.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/utilities/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="273" column="9" selection-start-line="273" selection-start-column="9" selection-end-line="273" selection-end-column="9" />
+            <state relative-caret-position="58">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/tests/smoke_test/SmokeTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="655">
+              <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/pages/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/tests/functional_test/reporting/orders/orders.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/utilities/TestBase.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/tests/functional_test/orders/orders/ex6.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="65" column="75" selection-start-line="65" selection-start-column="75" selection-end-line="65" selection-end-column="75" />
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/utilities/Pages.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-24">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/pages/OrdersPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#246#247#0" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/pages/PointOfSale.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+              <folding>
+                <element signature="e#247#248#0" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configuration.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BriteErpSeleniumFramework2.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,7 +179,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/com/briterp/utilities/BrowserUtilities.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/briterp/pages/PointOfSale.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/briterp/tests/smoke_test/SmokeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/briterp/pages/OrdersPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/briterp/utilities/Pages.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/briterp/utilities/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/briterp/tests/functional_test/reporting/orders/orders.java" />
       </list>
     </option>
   </component>
@@ -93,8 +207,8 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1923" />
     <option name="width" value="1364" />
     <option name="height" value="728" />
   </component>
@@ -184,6 +298,39 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="briterp" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="functional_test" type="462c0819:PsiDirectoryNode" />
+              <item name="reporting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BriteErpSeleniumFramework2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BriteErpSeleniumFramework2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="briterp" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="functional_test" type="462c0819:PsiDirectoryNode" />
+              <item name="reporting" type="462c0819:PsiDirectoryNode" />
+              <item name="orders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BriteErpSeleniumFramework2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BriteErpSeleniumFramework2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="briterp" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="smoke_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BriteErpSeleniumFramework2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BriteErpSeleniumFramework2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="briterp" type="462c0819:PsiDirectoryNode" />
               <item name="utilities" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -193,7 +340,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549080022871" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549125612160" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -207,7 +355,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.orders.accessOrdersAnlysGrph">
     <configuration name="C:/Users/User/Documents/BriteErpSeleniumFramework2/Smoke_test_runner.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BriteErpSeleniumFramework2" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/Smoke_test_runner.xml" />
@@ -218,8 +366,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SmokeTest.VisibilityAndClickability" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BriteErpSeleniumFramework2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.briterp.tests.smoke_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.briterp.tests.smoke_test" />
+      <option name="MAIN_CLASS_NAME" value="com.briterp.tests.smoke_test.SmokeTest" />
+      <option name="METHOD_NAME" value="VisibilityAndClickability" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="orders.accessOrdersAnlysGrph" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BriteErpSeleniumFramework2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.briterp.tests.functional_test.reporting.orders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.briterp.tests.functional_test.reporting.orders" />
+      <option name="MAIN_CLASS_NAME" value="com.briterp.tests.functional_test.reporting.orders.orders" />
+      <option name="METHOD_NAME" value="accessOrdersAnlysGrph" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.C:/Users/User/Documents/BriteErpSeleniumFramework2/Smoke_test_runner.xml" />
+      <item itemvalue="TestNG.SmokeTest.VisibilityAndClickability" />
+      <item itemvalue="TestNG.orders.accessOrdersAnlysGrph" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.orders.accessOrdersAnlysGrph" />
+        <item itemvalue="TestNG.SmokeTest.VisibilityAndClickability" />
         <item itemvalue="TestNG.C:/Users/User/Documents/BriteErpSeleniumFramework2/Smoke_test_runner.xml" />
       </list>
     </recent_temporary>
@@ -237,33 +428,46 @@
     </task>
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+  <component name="TestHistory">
+    <history-entry file="C__Users_User_Documents_BriteErpSeleniumFramework2_Smoke_test_runner_xml - 2019.02.01 at 23h 00m 34s.xml">
+      <configuration name="C:/Users/User/Documents/BriteErpSeleniumFramework2/Smoke_test_runner.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_User_Documents_BriteErpSeleniumFramework2_Smoke_test_runner_xml - 2019.02.01 at 23h 14m 40s.xml">
+      <configuration name="C:/Users/User/Documents/BriteErpSeleniumFramework2/Smoke_test_runner.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SmokeTest_VisibilityAndClickability - 2019.02.01 at 23h 15m 49s.xml">
+      <configuration name="SmokeTest.VisibilityAndClickability" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="orders_accessOrdersAnlysGrph - 2019.02.01 at 23h 31m 21s.xml">
+      <configuration name="orders.accessOrdersAnlysGrph" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="orders_accessOrdersAnlysGrph - 2019.02.01 at 23h 57m 54s.xml">
+      <configuration name="orders.accessOrdersAnlysGrph" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="orders_accessOrdersAnlysGrph - 2019.02.02 at 10h 55m 40s.xml">
+      <configuration name="orders.accessOrdersAnlysGrph" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="0" width="1364" height="728" extended-state="0" />
+    <frame x="1912" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26457056" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32131147" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3989899" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32996634" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32996634" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32996634" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -301,13 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/tests/functional_test/orders/orders/ex6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/pages/ex1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -322,10 +519,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BriteErpSeleniumFramework2.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4645" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/tests/smoke_test/SmokeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/pages/PointOfSale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+          <folding>
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configuration.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/utilities/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="65" column="75" selection-start-line="65" selection-start-column="75" selection-end-line="65" selection-end-column="75" />
+        <state relative-caret-position="58">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/pages/OrdersPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/utilities/Pages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/tests/functional_test/reporting/orders/orders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/tests/functional_test/orders/orders/ex6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

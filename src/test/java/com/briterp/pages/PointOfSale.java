@@ -12,7 +12,7 @@ public class PointOfSale {
     @FindBy(xpath = "//*[@data-menu='491']")
     public WebElement productsModuleButton;
 
-    @FindBy(xpath = "//*[@data-menu='491']")
+    @FindBy(xpath = "//a[@data-action-id='676']/span")
     public WebElement pointOfSaleModuleButton;
 
     @FindBy (xpath = "//*[@class='ui-sortable']")

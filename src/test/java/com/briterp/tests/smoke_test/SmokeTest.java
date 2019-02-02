@@ -6,6 +6,9 @@ import com.briterp.pages.PointOfSale;
 import com.briterp.utilities.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -87,7 +90,7 @@ public class SmokeTest extends TestBase {
         extentLogger.info("Clicking on Sign In button");
 //        loginPage.signInButton.click();
         extentLogger.info("Clicking on Point of Sale button");
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         discussModulePage.pointOfSale.click();
         extentLogger.info("Verifying Title");
         Thread.sleep(7000);
@@ -104,8 +107,4 @@ public class SmokeTest extends TestBase {
         Assert.assertEquals(driver.getTitle(), "Point of Sale - Odoo");
 
   }
-
-
-
-
 }
