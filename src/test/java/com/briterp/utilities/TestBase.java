@@ -53,6 +53,7 @@ public abstract class TestBase {
         htmlReporter = new ExtentHtmlReporter(filePath);
         report.attachReporter(htmlReporter);
 
+
         report.setSystemInfo("Environment", "Staging");
         report.setSystemInfo("Browser", ConfigurationReader.getProperty("browser"));
         report.setSystemInfo("OS", System.getProperty("os.name"));
