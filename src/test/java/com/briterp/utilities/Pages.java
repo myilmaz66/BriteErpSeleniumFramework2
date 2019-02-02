@@ -1,8 +1,6 @@
 package com.briterp.utilities;
-import com.briterp.pages.DiscussModulePage;
-import com.briterp.pages.LoginPage;
-import com.briterp.pages.OdooFirstPage;
-import com.briterp.pages.PointOfSale;
+
+import com.briterp.pages.*;
 
 
 public class Pages {
@@ -11,18 +9,18 @@ public class Pages {
     private LoginPage loginPage;
     private DiscussModulePage discussModulePage;
     private PointOfSale pointOfSale;
+    private OrdersPage orderspage;
 
-
-   public OdooFirstPage odoo(){
-        if(odooFirstPage==null){
+    public OdooFirstPage odoo() {
+        if (odooFirstPage == null) {
             odooFirstPage = new OdooFirstPage();
         }
         return odooFirstPage;
 
-   }
+    }
 
-    public LoginPage loginPage(){
-        if(loginPage==null){
+    public LoginPage loginPage() {
+        if (loginPage == null) {
             loginPage = new LoginPage();
         }
         return loginPage;
@@ -30,26 +28,29 @@ public class Pages {
     }
 
 
-
-
-    public DiscussModulePage  discussModulePage(){
-        if(discussModulePage==null){
+    public DiscussModulePage discussModulePage() {
+        if (discussModulePage == null) {
             discussModulePage = new DiscussModulePage();
         }
         return discussModulePage;
 
     }
-    public PointOfSale  pointOfSale(){
-        if(pointOfSale==null){
+
+    public PointOfSale pointOfSale() {
+        if (pointOfSale == null) {
             pointOfSale = new PointOfSale();
         }
         return pointOfSale;
 
     }
 
+    public OrdersPage orders() {
+        if (orderspage == null) {
+            orderspage = new OrdersPage();
+        }
+        return orderspage;
 
-
-
+    }
 
 
 }

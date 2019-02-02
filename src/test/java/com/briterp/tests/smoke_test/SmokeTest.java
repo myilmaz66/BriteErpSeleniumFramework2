@@ -90,7 +90,7 @@ public class SmokeTest extends TestBase {
         extentLogger.info("Clicking on Sign In button");
 //        loginPage.signInButton.click();
         extentLogger.info("Clicking on Point of Sale button");
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         discussModulePage.pointOfSale.click();
         extentLogger.info("Verifying Title");
         Thread.sleep(7000);
