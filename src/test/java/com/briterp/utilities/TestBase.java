@@ -53,7 +53,7 @@ public abstract class TestBase {
         } else if (result.getStatus() == ITestResult.SKIP) {
             extentLogger.skip("Test Case Skipped: " + result.getName());
         }
-//        Driver.closeDriver();
+        Driver.closeDriver();
     }
 
     @BeforeTest(alwaysRun = true)

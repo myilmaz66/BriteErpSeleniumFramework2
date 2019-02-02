@@ -44,6 +44,9 @@ public class SmokeTest extends TestBase {
     public void logInPositive(){
         extentLogger = report.createTest("Positive Log In Test");
 
+        Driver.getDriver();
+        extentLogger.info("Clicking on BritErpDemo");
+        odooFirstPage.stepsToLogInPage();
 
         extentLogger.info("Entering Correct email in Email box");
         loginPage.emailBox.sendKeys(ConfigurationReader.getProperty("username"));

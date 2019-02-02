@@ -2,60 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c43d90b0-edc7-4306-8cc6-6afdd01e69cf" name="Default Changelist" comment="&quot;&quot;">
-      <change afterPath="$PROJECT_DIR$/.idea/BriteErpSeleniumFramework2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aventstack_extentreports_4_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_72.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_25_0_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_14_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_bonigarcia_webdrivermanager_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_8_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_extras_beanshell_bsh_2_0b6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_11_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_rauschig_jarchivelib_0_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_14_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smoke_test_runner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smoke_test_runner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/briterp/pages/DiscussModulePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briterp/pages/DiscussModulePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/briterp/tests/smoke_test/SmokeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briterp/tests/smoke_test/SmokeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/briterp/utilities/Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briterp/utilities/Pages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/briterp/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briterp/utilities/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/briterp/utilities/Methods.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/report.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,9 +35,9 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
-          <entry key="java" value="35" />
+          <entry key="java" value="36" />
           <entry key="png" value="5" />
-          <entry key="properties" value="3" />
+          <entry key="properties" value="4" />
           <entry key="testng_runner" value="1" />
           <entry key="xml" value="6" />
         </counts>
@@ -97,16 +46,16 @@
         <counts>
           <entry key="HTML" value="1" />
           <entry key="Image" value="5" />
-          <entry key="JAVA" value="35" />
+          <entry key="JAVA" value="36" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="3" />
+          <entry key="Properties" value="4" />
           <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="9" />
-          <entry key="java" value="3308" />
+          <entry key="java" value="3333" />
           <entry key="properties" value="42" />
           <entry key="txt" value="1" />
           <entry key="xml" value="44" />
@@ -114,7 +63,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3308" />
+          <entry key="JAVA" value="3333" />
           <entry key="PLAIN_TEXT" value="10" />
           <entry key="Properties" value="42" />
           <entry key="XML" value="44" />
@@ -125,19 +74,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/regression_runner.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/utilities/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="297">
+              <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/utilities/TestBase.java">
+        <entry file="file://$PROJECT_DIR$/configuration.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="30">
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -145,11 +94,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/pages/OdooFirstPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="247">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
                 <element signature="e#479#480#0" expanded="true" />
               </folding>
             </state>
@@ -159,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/tests/smoke_test/SmokeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
-              <caret line="82" column="22" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+            <state relative-caret-position="267">
+              <caret line="53" column="73" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -197,10 +145,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/utilities/Driver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="26" column="37" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/pages/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+            <state relative-caret-position="177">
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -261,7 +218,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/briterp/tests/smoke_test/TitleHomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/briterp/tests/smoke_test/LoginFunctionalityPositive.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/briterp/utilities/ApplicationConstants.java" />
-        <option value="$PROJECT_DIR$/configuration.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/briterp/tests/smoke_test/LoginFunctionalityNegative.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/briterp/pages/OdooFirstPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/briterp/pages/LoginPage.java" />
@@ -271,9 +227,10 @@
         <option value="$PROJECT_DIR$/src/test/java/com/briterp/pages/PointOfSale.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/briterp/utilities/ImplicitWait.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/briterp/utilities/Pages.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/briterp/utilities/TestBase.java" />
         <option value="$PROJECT_DIR$/Smoke_test_runner.xml" />
+        <option value="$PROJECT_DIR$/configuration.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/briterp/tests/smoke_test/SmokeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/briterp/utilities/TestBase.java" />
       </list>
     </option>
   </component>
@@ -384,7 +341,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549059971240" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549066534868" />
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
     <UpdatedFiles>
@@ -600,9 +557,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG./Users/mijatratkovic/Downloads/BriteErpSeleniumFramework2/Smoke_test_runner.xml" />
+        <item itemvalue="TestNG.SmokeTest.logInPositive" />
         <item itemvalue="TestNG.SmokeTest.VisibilityAndClickability" />
         <item itemvalue="TestNG.SmokeTest.logInNegative" />
-        <item itemvalue="TestNG.SmokeTest.logInPositive" />
         <item itemvalue="TestNG.SmokeTest" />
       </list>
     </recent_temporary>
@@ -621,42 +578,41 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SmokeTest_VisibilityAndClickability - 2019.02.01 at 17h 03m 39s.xml">
-      <configuration name="SmokeTest.VisibilityAndClickability" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SmokeTest_VisibilityAndClickability - 2019.02.01 at 17h 04m 28s.xml">
-      <configuration name="SmokeTest.VisibilityAndClickability" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SmokeTest_VisibilityAndClickability - 2019.02.01 at 17h 05m 12s.xml">
-      <configuration name="SmokeTest.VisibilityAndClickability" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SmokeTest_VisibilityAndClickability - 2019.02.01 at 17h 06m 01s.xml">
-      <configuration name="SmokeTest.VisibilityAndClickability" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SmokeTest_VisibilityAndClickability - 2019.02.01 at 17h 10m 49s.xml">
-      <configuration name="SmokeTest.VisibilityAndClickability" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SmokeTest_VisibilityAndClickability - 2019.02.01 at 17h 16m 45s.xml">
-      <configuration name="SmokeTest.VisibilityAndClickability" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SmokeTest_VisibilityAndClickability - 2019.02.01 at 17h 18m 35s.xml">
-      <configuration name="SmokeTest.VisibilityAndClickability" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_mijatratkovic_Downloads_BriteErpSeleniumFramework2_Smoke_test_runner_xml - 2019.02.01 at 17h 20m 23s.xml">
-      <configuration name="/Users/mijatratkovic/Downloads/BriteErpSeleniumFramework2/Smoke_test_runner.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_mijatratkovic_Downloads_BriteErpSeleniumFramework2_Smoke_test_runner_xml - 2019.02.01 at 17h 21m 30s.xml">
-      <configuration name="/Users/mijatratkovic/Downloads/BriteErpSeleniumFramework2/Smoke_test_runner.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="_Users_mijatratkovic_Downloads_BriteErpSeleniumFramework2_Smoke_test_runner_xml - 2019.02.01 at 17h 22m 58s.xml">
+      <configuration name="/Users/mijatratkovic/Downloads/BriteErpSeleniumFramework2/Smoke_test_runner.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_mijatratkovic_Downloads_BriteErpSeleniumFramework2_Smoke_test_runner_xml - 2019.02.01 at 17h 25m 53s.xml">
+      <configuration name="/Users/mijatratkovic/Downloads/BriteErpSeleniumFramework2/Smoke_test_runner.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_mijatratkovic_Downloads_BriteErpSeleniumFramework2_Smoke_test_runner_xml - 2019.02.01 at 19h 06m 23s.xml">
+      <configuration name="/Users/mijatratkovic/Downloads/BriteErpSeleniumFramework2/Smoke_test_runner.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_mijatratkovic_Downloads_BriteErpSeleniumFramework2_Smoke_test_runner_xml - 2019.02.01 at 19h 07m 50s.xml">
+      <configuration name="/Users/mijatratkovic/Downloads/BriteErpSeleniumFramework2/Smoke_test_runner.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SmokeTest_logInPositive - 2019.02.01 at 19h 08m 27s.xml">
+      <configuration name="SmokeTest.logInPositive" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SmokeTest_logInPositive - 2019.02.01 at 19h 09m 27s.xml">
+      <configuration name="SmokeTest.logInPositive" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SmokeTest_logInPositive - 2019.02.01 at 19h 10m 12s.xml">
+      <configuration name="SmokeTest.logInPositive" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_mijatratkovic_Downloads_BriteErpSeleniumFramework2_Smoke_test_runner_xml - 2019.02.01 at 19h 11m 05s.xml">
+      <configuration name="/Users/mijatratkovic/Downloads/BriteErpSeleniumFramework2/Smoke_test_runner.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_mijatratkovic_Downloads_BriteErpSeleniumFramework2_Smoke_test_runner_xml - 2019.02.01 at 19h 11m 33s.xml">
+      <configuration name="/Users/mijatratkovic/Downloads/BriteErpSeleniumFramework2/Smoke_test_runner.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_mijatratkovic_Downloads_BriteErpSeleniumFramework2_Smoke_test_runner_xml - 2019.02.01 at 19h 13m 01s.xml">
       <configuration name="/Users/mijatratkovic/Downloads/BriteErpSeleniumFramework2/Smoke_test_runner.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -665,7 +621,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32961586" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4275093" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27757126" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.21561338" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -769,20 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configuration.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/utilities/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test-output/report.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -825,18 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/pages/OdooFirstPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/pages/DiscussModulePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -859,16 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/utilities/Pages.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -876,6 +796,41 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/pages/OdooFirstPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/utilities/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configuration.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -891,20 +846,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/utilities/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/tests/smoke_test/SmokeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="82" column="22" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+        <state relative-caret-position="267">
+          <caret line="53" column="73" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briterp/utilities/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
         </state>
       </provider>
     </entry>
