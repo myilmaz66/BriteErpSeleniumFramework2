@@ -35,7 +35,6 @@ public abstract class TestBase {
         loginPage = new LoginPage();
         pointOfSale = new PointOfSale();
 
-
         discussModulePage = new DiscussModulePage();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(ConfigurationReader.getProperty("url"));
@@ -60,10 +59,10 @@ public abstract class TestBase {
     public void setUpTest() {
         report = new ExtentReports();
         //path for mac users
-        String filePath = System.getProperty("user.dir") + "/test-output/report.html";
+       // String filePath = System.getProperty("user.dir") + "/test-output/report.html";
 
         //path for windows users
-//        String filePath = System.getProperty("user.dir") + "/test-output/report.html";
+        String filePath = System.getProperty("user.dir") + "/test-output/report.html";
         htmlReporter = new ExtentHtmlReporter(filePath);
         report.attachReporter(htmlReporter);
 
