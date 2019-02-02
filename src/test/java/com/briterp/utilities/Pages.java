@@ -1,38 +1,57 @@
 package com.briterp.utilities;
-//import com.weborders.pages.*;
-//
-//public class Pages {
-//    private LoginPage loginPage;
-//    private ViewAllOrdersPage viewAllOrdersPage;
-//    private ViewAllProductsPage viewAllProductsPage;
-//    private OrderPage orderPage;
-//
-//    public LoginPage login() {
-//        if (loginPage == null) {
-//            loginPage = new LoginPage();
-//        }
-//        return loginPage;
-//    }
-//
-//    public ViewAllOrdersPage viewAllOrders() {
-//        if (viewAllOrdersPage == null) {
-//            viewAllOrdersPage = new ViewAllOrdersPage();
-//        }
-//        return viewAllOrdersPage;
-//    }
-//
-//    public ViewAllProductsPage viewAllProducts() {
-//        if (viewAllProductsPage == null) {
-//            viewAllProductsPage = new ViewAllProductsPage();
-//        }
-//        return viewAllProductsPage;
-//    }
-//
-//    public OrderPage order() {
-//        if (orderPage == null) {
-//            orderPage = new OrderPage();
-//        }
-//        return orderPage;
-//    }
-//}
+
+import com.briterp.pages.*;
+
+
+public class Pages {
+
+    private OdooFirstPage odooFirstPage;
+    private LoginPage loginPage;
+    private DiscussModulePage discussModulePage;
+    private PointOfSale pointOfSale;
+    private OrdersPage orderspage;
+
+    public OdooFirstPage odoo() {
+        if (odooFirstPage == null) {
+            odooFirstPage = new OdooFirstPage();
+        }
+        return odooFirstPage;
+
+    }
+
+    public LoginPage loginPage() {
+        if (loginPage == null) {
+            loginPage = new LoginPage();
+        }
+        return loginPage;
+
+    }
+
+
+    public DiscussModulePage discussModulePage() {
+        if (discussModulePage == null) {
+            discussModulePage = new DiscussModulePage();
+        }
+        return discussModulePage;
+
+    }
+
+    public PointOfSale pointOfSale() {
+        if (pointOfSale == null) {
+            pointOfSale = new PointOfSale();
+        }
+        return pointOfSale;
+
+    }
+
+    public OrdersPage orders() {
+        if (orderspage == null) {
+            orderspage = new OrdersPage();
+        }
+        return orderspage;
+
+    }
+
+
+}
 

@@ -11,11 +11,12 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.*;
+import java.util.NoSuchElementException;
 
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 
-public class BrowserUtilities {
+public class BrowserUtilities extends TestBase {
 
     public static void wait(int secs) {
         try {

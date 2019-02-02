@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="WebOrders" verbose="2">
+
+    <test name="TEST TEST">
+        <classes>
+            <class name="com.briterp.tests.functional_test.catalog.pricelists.ex2">    <!--- just examle > -->
+
+            </class>
+        </classes>
+    </test>
+
+</suite>

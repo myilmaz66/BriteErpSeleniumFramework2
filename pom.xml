@@ -37,6 +37,18 @@
             <artifactId>extentreports</artifactId>
             <version>4.0.6</version>
         </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>4.0.6</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 
@@ -49,7 +61,7 @@
                 <version>2.21.0</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng_runner.xml</suiteXmlFile>
+                        <suiteXmlFile>Smoke_test_runner.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
