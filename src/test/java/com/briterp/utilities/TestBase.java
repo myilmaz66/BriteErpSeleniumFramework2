@@ -3,6 +3,10 @@ package com.briterp.utilities;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.briterp.pages.DiscussModulePage;
+import com.briterp.pages.LoginPage;
+import com.briterp.pages.OdooFirstPage;
+import com.briterp.pages.PointOfSale;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -13,21 +17,31 @@ import java.util.concurrent.TimeUnit;
 public abstract class TestBase {
     protected WebDriver driver;
     //protected Pages pages;
+    protected OdooFirstPage odooFirstPage;
+    protected LoginPage loginPage;
+    protected DiscussModulePage discussModulePage;
+    protected PointOfSale pointOfSale;
+
 
     protected static ExtentReports report;
     private static ExtentHtmlReporter htmlReporter;
     protected static ExtentTest extentLogger;
 
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setupMethod() {
         driver = Driver.getDriver();
-        //pages = new Pages();
+        odooFirstPage = new OdooFirstPage();
+        loginPage = new LoginPage();
+        pointOfSale = new PointOfSale();
+
+
+        discussModulePage = new DiscussModulePage();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(ConfigurationReader.getProperty("url"));
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDownMethod(ITestResult result) throws IOException {
         // if any test fails, it can detect it, take a screen shot at the point and attach to report
         if (result.getStatus() == ITestResult.FAILURE) {
@@ -42,14 +56,14 @@ public abstract class TestBase {
         Driver.closeDriver();
     }
 
-    @BeforeTest
+    @BeforeTest(alwaysRun = true)
     public void setUpTest() {
         report = new ExtentReports();
         //path for mac users
-        //String filePath = System.getProperty("user.dir") + "/test-output/report.html";
+        String filePath = System.getProperty("user.dir") + "/test-output/report.html";
 
         //path for windows users
-        String filePath = System.getProperty("user.dir") + "\\test-output\\report.html";
+//        String filePath = System.getProperty("user.dir") + "/test-output/report.html";
         htmlReporter = new ExtentHtmlReporter(filePath);
         report.attachReporter(htmlReporter);
 
@@ -60,13 +74,17 @@ public abstract class TestBase {
         report.setSystemInfo("QA Engineers", "Tysons_8");
 
         htmlReporter.config().setDocumentTitle("Brite Erp Point of Sale Reports");
-        htmlReporter.config().setReportName("Brite Erp Point Of Sale Automated Test Reports");
+
+        htmlReporter.config().setReportName("Brite Erp Point of Sale Automated Test Reports");
+
+
+
 
 //        htmlReporter.config().setTheme(Theme.DARK);
 
     }
 
-    @AfterTest
+    @AfterTest(alwaysRun = true)
     public void tearDownTest() {
         report.flush();
     }
