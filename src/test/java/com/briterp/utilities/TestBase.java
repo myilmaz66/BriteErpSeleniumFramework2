@@ -13,23 +13,15 @@ import java.util.concurrent.TimeUnit;
 public abstract class TestBase {
     protected WebDriver driver;
     protected Pages pages;
-
-
     protected static ExtentReports report;
     private static ExtentHtmlReporter htmlReporter;
     protected static ExtentTest extentLogger;
-    protected Pages pages;
 
 
     @BeforeMethod(alwaysRun = true)
     public void setupMethod() {
         driver = Driver.getDriver();
         pages = new Pages();
-        odooFirstPage = new OdooFirstPage();
-        loginPage = new LoginPage();
-        pointOfSale = new PointOfSale();
-         pages=new Pages();
-        discussModulePage = new DiscussModulePage();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get(ConfigurationReader.getProperty("url"));
