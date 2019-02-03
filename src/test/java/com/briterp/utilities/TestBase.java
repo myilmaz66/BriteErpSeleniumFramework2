@@ -18,12 +18,18 @@ public abstract class TestBase {
     protected static ExtentReports report;
     private static ExtentHtmlReporter htmlReporter;
     protected static ExtentTest extentLogger;
+    protected Pages pages;
 
 
     @BeforeMethod(alwaysRun = true)
     public void setupMethod() {
         driver = Driver.getDriver();
         pages = new Pages();
+        odooFirstPage = new OdooFirstPage();
+        loginPage = new LoginPage();
+        pointOfSale = new PointOfSale();
+         pages=new Pages();
+        discussModulePage = new DiscussModulePage();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get(ConfigurationReader.getProperty("url"));
@@ -54,6 +60,7 @@ public abstract class TestBase {
         String filePath = System.getProperty("user.dir") + "/test-output/report.html";
         htmlReporter = new ExtentHtmlReporter(filePath);
         report.attachReporter(htmlReporter);
+
 
         report.setSystemInfo("Environment", "Staging");
         report.setSystemInfo("Browser", ConfigurationReader.getProperty("browser"));

@@ -86,6 +86,8 @@ public class SmokeTest extends TestBase {
         Thread.sleep(1000);
         pages.discussModulePage().pointOfSale.click();
 
+        Thread.sleep(2000);
+        discussModulePage.pointOfSale.click();
         extentLogger.info("Verifying Title");
         Thread.sleep(7000);
         Assert.assertEquals(driver.getTitle(),"Point of Sale - Odoo");
