@@ -30,20 +30,11 @@ public class CreatePricelistItemsPage {
     @FindBy(xpath = "//div[@class='modal-footer']//button[1]")
     public WebElement saveAndClose;
 
-    @FindBy(xpath = "//div[@name='item_ids']//tbody/tr/td/button")
-    public List<WebElement> deleteSigns;
-
     @FindBy(xpath = "//h1[.='All Products']//following-sibling::div//tr//span[@class='o_dropdown_button']//preceding-sibling::input")
     public List< WebElement> productBox;
 
     @FindBy(xpath = "//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li/..")
     public List<WebElement> productItems;
-
-//    @FindBy(xpath = "(//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li/..)[2]//li[@class='ui-menu-item']")
-//    public List<WebElement> productItems;
-//
-//    @FindBy(xpath = "(//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li/..)[3]//li[@class='ui-menu-item']")
-//    public List<WebElement> productVariantItems;
 
 
 

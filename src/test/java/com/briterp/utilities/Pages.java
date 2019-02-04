@@ -13,6 +13,7 @@ public class Pages {
     private OrdersPage orderspage;
     private PricelistEditCreatePage pricelistEditCreatePage;
     private CreatePricelistItemsPage createPricelistItemsPage;
+    private PricelistSaveDiscardPage pricelistSaveDiscardPage;
 
     public OdooFirstPage odoo() {
         if (odooFirstPage == null) {
@@ -75,6 +76,14 @@ public class Pages {
             createPricelistItemsPage=new CreatePricelistItemsPage();
         }
         return createPricelistItemsPage;
+    }
+
+    public PricelistSaveDiscardPage pricelistSaveDiscardPage() {
+        if (pricelistSaveDiscardPage == null) {
+            pricelistSaveDiscardPage = new PricelistSaveDiscardPage();
+        }
+        return pricelistSaveDiscardPage;
+
     }
 }
 
