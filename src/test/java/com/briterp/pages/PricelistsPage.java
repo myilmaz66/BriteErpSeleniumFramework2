@@ -12,7 +12,7 @@ public class PricelistsPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//div[@class='o_sub_menu_content']//div[8]//ul[2]//li[2]//a[1]")
+    @FindBy(xpath = "//a[@data-menu-xmlid='point_of_sale.pos_config_menu_action_product_pricelist']")
     public WebElement pricelistsLink;
 
     @FindBy(xpath = "//table/tbody//td[3]")

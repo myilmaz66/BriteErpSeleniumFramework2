@@ -11,6 +11,8 @@ public class Pages {
     private PointOfSalePage pointOfSalePage;
     private PricelistsPage pricelistsPage;
     private OrdersPage orderspage;
+    private PricelistEditCreatePage pricelistEditCreatePage;
+    private CreatePricelistItemsPage createPricelistItemsPage;
 
     public OdooFirstPage odoo() {
         if (odooFirstPage == null) {
@@ -61,6 +63,18 @@ public class Pages {
 
     }
 
+    public PricelistEditCreatePage pricelistEditCreate(){
+        if (pricelistEditCreatePage == null){
+            pricelistEditCreatePage = new PricelistEditCreatePage();
+        }
+        return pricelistEditCreatePage;
+    }
 
+    public CreatePricelistItemsPage createPricelistItems() {
+        if (createPricelistItemsPage==null){
+            createPricelistItemsPage=new CreatePricelistItemsPage();
+        }
+        return createPricelistItemsPage;
+    }
 }
 
