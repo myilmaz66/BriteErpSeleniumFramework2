@@ -1,6 +1,7 @@
 package com.briterp.tests.functional_test.catalog.pricelists;
 
 import com.briterp.utilities.BrowserUtilities;
+import com.briterp.utilities.ConfigurationReader;
 import com.briterp.utilities.Driver;
 import com.briterp.utilities.TestBase;
 import org.openqa.selenium.WebElement;
@@ -23,14 +24,10 @@ public class PricelistsTest extends TestBase {
         pages.loginPage().positiveLogIn();
 
         extentLogger.info("Click on \"point of sale\" link");
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         pages.discussModulePage().pointOfSale.click();
 
         extentLogger.info("Click on \"Pricelists\" link under \"Catalog\"");
-//        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
-//        WebElement until = wait.until(ExpectedConditions.visibilityOf(pages.discussModulePage().pointOfSale));
-//        BrowserUtilities.wait(3);
-        BrowserUtilities.waitForPageToLoad(2);
+        BrowserUtilities.wait(5);
         pages.pricelists().pricelistsLink.click();
 
         extentLogger.info("Click on any pricelist name");
@@ -76,7 +73,78 @@ public class PricelistsTest extends TestBase {
     }
 
     @Test
-    public void addAndDeleteItems()  {
-        extentLogger = report.createTest("Add and Delete Items in \"Pricelist Items\" field");
+    public void PricelistName() {
+        extentLogger = report.createTest("Changing Pricelist Name Test");
         extentLogger.info("Login");
+        pages.odoo().briteErpDemo.click();
+        pages.loginPage().positiveLogIn();
+
+        extentLogger.info("Click on \"point of sale\" link");
+        BrowserUtilities.wait(5);
+        pages.discussModulePage().pointOfSale.click();
+
+        extentLogger.info("Click on \"Pricelists\" link under \"Catalog\"");
+        BrowserUtilities.waitForPageToLoad(2);
+        pages.pricelists().pricelistsLink.click();
+
+        extentLogger.info("Click on any pricelist name");
+        pages.pricelists().priceListNames.get(randomNumber(0, pages.pricelists().priceListNames.size() - 1)).click();
+
+        extentLogger.info("Click on \"Edit\" button");
+        pages.pricelistEditCreate().editButton.click();
+
+        extentLogger.info(" Change the name of the price list");
+        pages.pricelistEditCreate().pricelistName.clear();
+        pages.pricelistEditCreate().pricelistName.sendKeys(ConfigurationReader.getProperty("pricelistName"));
+
+        extentLogger.info(" Click on \"Save\" button");
+        pages.pricelistEditCreate().save.click();
+
+        extentLogger.info("Verify if pricelist name after saving it is matching with the one user put.");
+        Assert.assertEquals(pages.pricelistEditCreate().savedPricelistName.getText(), ConfigurationReader.getProperty("pricelistName"));
+
+        extentLogger.info(" Click on \"Pricelists\" link");
+        pages.pricelists().pricelistsLink.click();
+        BrowserUtilities.wait(2);
+
+        extentLogger.info("Verify that pricelist name table includes updated name ");
+        String updatedName = "";
+        for (int i = 0; i < pages.pricelists().priceListNames.size(); i++) {
+            if (pages.pricelists().priceListNames.get(i).getText().equals(ConfigurationReader.getProperty("pricelistName"))) {
+                updatedName = pages.pricelists().priceListNames.get(i).getText();
+                break;
+            }
+        }
+        Assert.assertEquals(updatedName, ConfigurationReader.getProperty("pricelistName"));
+    }
+
+    @Test
+    public void discardEditing() {
+        extentLogger = report.createTest("Discarding the editied Item Info Test");
+        extentLogger.info("Login");
+        pages.odoo().briteErpDemo.click();
+        pages.loginPage().positiveLogIn();
+
+        extentLogger.info("Click on \"point of sale\" link");
+        BrowserUtilities.wait(5);
+        pages.discussModulePage().pointOfSale.click();
+
+        extentLogger.info("Click on \"Pricelists\" link under \"Catalog\"");
+        BrowserUtilities.waitForPageToLoad(2);
+        pages.pricelists().pricelistsLink.click();
+
+        extentLogger.info("Click on any pricelist name");
+        pages.pricelists().priceListNames.get(randomNumber(0, pages.pricelists().priceListNames.size() - 1)).click();
+
+        extentLogger.info("Click on \"Edit\" button");
+        pages.pricelistEditCreate().editButton.click();
+
+        extentLogger.info("Type a code into \"E-commerce Promotional Code\" field and click on discard button");
+
+        extentLogger.info("Click on \"discard\" button.");
+
+        extentLogger.info("Verify that previous info did not change for the Pricelist item");
+
+
+    }
 }

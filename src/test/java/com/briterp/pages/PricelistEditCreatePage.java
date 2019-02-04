@@ -15,4 +15,14 @@ public class PricelistEditCreatePage {
 
     @FindBy(xpath = "(//td[@class='o_field_x2many_list_row_add']/a)[2]")
     public WebElement addAnItem2;
+
+    @FindBy(xpath = "//input[@placeholder='e.g. USD Retailers']")
+    public WebElement pricelistName;
+
+    @FindBy(xpath = "//span[@name='name']")
+    public WebElement savedPricelistName;
+
+    @FindBy(xpath = "//button[@type='button'][contains(text(),'Save')]")
+    public WebElement save;
+
 }
