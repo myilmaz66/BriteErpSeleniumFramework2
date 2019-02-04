@@ -18,4 +18,5 @@ public class PointOfSale {
     @FindBy (xpath = "//*[@class='ui-sortable']")
     public WebElement table;
 
+
 }
