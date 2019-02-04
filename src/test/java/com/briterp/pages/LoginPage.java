@@ -13,34 +13,28 @@ import org.testng.Assert;
 import java.util.concurrent.TimeUnit;
 
 public class LoginPage {
-    public LoginPage(){ PageFactory.initElements(Driver.getDriver(),this);}
+    public LoginPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
 
     @FindBy(id = "login")
-   public WebElement emailBox;
+    public WebElement emailBox;
 
-    @FindBy (id = "password")
+    @FindBy(id = "password")
     public WebElement passwordBox;
 
     @FindBy(xpath = "//*[@class='btn btn-primary']")
-    public WebElement signInButton;
+    public WebElement logInButton;
 
     @FindBy(xpath = "//*[@class='alert alert-danger']")
     public WebElement errorMessage;
 
 
-
-
-    public void positiveLogIn(){
+    public void positiveLogIn() {
         emailBox.sendKeys(ConfigurationReader.getProperty("username"));
         passwordBox.sendKeys(ConfigurationReader.getProperty("password"));
-        signInButton.click();
+        logInButton.click();
     }
-
-
-
-
-
-
 
 
 }

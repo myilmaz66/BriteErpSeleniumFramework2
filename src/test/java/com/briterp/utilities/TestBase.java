@@ -3,41 +3,34 @@ package com.briterp.utilities;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.briterp.pages.DiscussModulePage;
-import com.briterp.pages.LoginPage;
-import com.briterp.pages.OdooFirstPage;
-import com.briterp.pages.PointOfSale;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
+import javax.swing.*;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public abstract class TestBase {
     protected WebDriver driver;
-    //protected Pages pages;
-    protected OdooFirstPage odooFirstPage;
-    protected LoginPage loginPage;
-    protected DiscussModulePage discussModulePage;
-    protected PointOfSale pointOfSale;
-
-
+    protected Pages pages;
+    protected Actions actions;
+    protected WebDriverWait webDriverWait;
     protected static ExtentReports report;
     private static ExtentHtmlReporter htmlReporter;
     protected static ExtentTest extentLogger;
-    protected Pages pages;
 
 
     @BeforeMethod(alwaysRun = true)
     public void setupMethod() {
         driver = Driver.getDriver();
-        odooFirstPage = new OdooFirstPage();
-        loginPage = new LoginPage();
-        pointOfSale = new PointOfSale();
-         pages=new Pages();
-        discussModulePage = new DiscussModulePage();
+        pages = new Pages();
+        webDriverWait = new WebDriverWait(driver,100);
+        actions = new Actions(driver);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
         driver.get(ConfigurationReader.getProperty("url"));
     }
 
@@ -60,7 +53,7 @@ public abstract class TestBase {
     public void setUpTest() {
         report = new ExtentReports();
         //path for mac users
-       // String filePath = System.getProperty("user.dir") + "/test-output/report.html";
+        // String filePath = System.getProperty("user.dir") + "/test-output/report.html";
 
         //path for windows users
         String filePath = System.getProperty("user.dir") + "/test-output/report.html";
@@ -78,8 +71,6 @@ public abstract class TestBase {
         htmlReporter.config().setReportName("Brite Erp Point of Sale Automated Test Reports");
 
 
-
-
 //        htmlReporter.config().setTheme(Theme.DARK);
 
     }
@@ -88,6 +79,8 @@ public abstract class TestBase {
     public void tearDownTest() {
         report.flush();
     }
-}
 
-// MIJAT RATKOVIC
+    public static int randomNumber(int start, int end) {
+        return start + (int) (Math.random() * (end - start + 1));
+    }
+}

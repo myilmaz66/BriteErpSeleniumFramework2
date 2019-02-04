@@ -1,6 +1,7 @@
 package com.briterp.utilities;
 
 import com.briterp.pages.*;
+import com.briterp.tests.functional_test.dashboard.WholeFoodsStore;
 
 
 public class Pages {
@@ -8,8 +9,10 @@ public class Pages {
     private OdooFirstPage odooFirstPage;
     private LoginPage loginPage;
     private DiscussModulePage discussModulePage;
-    private PointOfSale pointOfSale;
+    private PointOfSalePage pointOfSalePage;
+    private PricelistsPage pricelistsPage;
     private OrdersPage orderspage;
+    private WholeFoodsStorePage wholeFoodsStorePage;
 
     public OdooFirstPage odoo() {
         if (odooFirstPage == null) {
@@ -36,19 +39,35 @@ public class Pages {
 
     }
 
-    public PointOfSale pointOfSale() {
-        if (pointOfSale == null) {
-            pointOfSale = new PointOfSale();
+    public PointOfSalePage pointOfSale(){
+        if(pointOfSalePage ==null) {
+            pointOfSalePage = new PointOfSalePage();
         }
-        return pointOfSale;
+        return pointOfSalePage;
 
     }
+
+    public PricelistsPage pricelists(){
+        if(pricelistsPage ==null){
+            pricelistsPage = new PricelistsPage();
+        }
+        return pricelistsPage;
+    }
+
 
     public OrdersPage orders() {
         if (orderspage == null) {
             orderspage = new OrdersPage();
         }
         return orderspage;
+
+    }
+
+    public WholeFoodsStorePage wholeFoodsStorePage() {
+        if (wholeFoodsStorePage == null) {
+            wholeFoodsStorePage = new WholeFoodsStorePage();
+        }
+        return wholeFoodsStorePage;
 
     }
 
