@@ -33,12 +33,17 @@ public class CreatePricelistItemsPage {
     @FindBy(xpath = "//div[@name='item_ids']//tbody/tr/td/button")
     public List<WebElement> deleteSigns;
 
-    @FindBy(xpath = "//input[@id='radio435_2_product_category']/../../../..//following-sibling::tr//input")
+    @FindBy(xpath = "//h1[.='All Products']//following-sibling::div//tr//span[@class='o_dropdown_button']//preceding-sibling::input")
     public List< WebElement> productBox;
 
-    @FindBy(xpath = "//ul[@id='ui-id-30']/li")
-    public List<WebElement> productVariantItems;
+    @FindBy(xpath = "//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li/..")
+    public List<WebElement> productItems;
 
+//    @FindBy(xpath = "(//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li/..)[2]//li[@class='ui-menu-item']")
+//    public List<WebElement> productItems;
+//
+//    @FindBy(xpath = "(//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li/..)[3]//li[@class='ui-menu-item']")
+//    public List<WebElement> productVariantItems;
 
 
 
