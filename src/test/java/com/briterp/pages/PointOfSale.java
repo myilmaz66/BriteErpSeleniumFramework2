@@ -12,7 +12,7 @@ public class PointOfSale {
     @FindBy(xpath = "//*[@data-menu='491']")
     public WebElement productsModuleButton;
 
-    @FindBy(xpath = "a[@data-action-id='676']/span")
+    @FindBy(xpath = "//a[@class='oe_menu_toggler']//span[@class='oe_menu_text'][contains(text(),'Point of Sale')]")
     public WebElement pointOfSaleModuleButton;
 
     @FindBy (xpath = "//*[@class='ui-sortable']")
@@ -51,6 +51,27 @@ public class PointOfSale {
 
     @FindBy(xpath = "//button[@class='btn btn-default fa fa-bar-chart-o o_graph_button active']")
     public WebElement barChart;
+
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/button[2]")
+    public WebElement lineChart;
+
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/button[3]")
+    public WebElement pieChart;
+
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[3]/div[3]/button[1]")
+    public WebElement graph;
+
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[3]/div[3]/button[2]")
+    public WebElement pivot;
+
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/button[1]")
+    public WebElement flip;
+
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/button[2]")
+    public WebElement expand;
+
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/button[3]")
+    public WebElement download;
 
 
 }

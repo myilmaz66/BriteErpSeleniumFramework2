@@ -24,7 +24,7 @@ public class orders extends TestBase {
         pages.loginPage().passwordBox.sendKeys(ConfigurationReader.getProperty("password"));
         extentLogger.info("Click on the SignTn Button");
         pages.loginPage().signInButton.click();
-        Thread.sleep(5000);
+        Thread.sleep(10000);
 //        WebDriverWait wait = new WebDriverWait(driver,10);
 //        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@data-menu-xmlid='point_of_sale.menu_point_root']")));
         //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -76,6 +76,55 @@ public class orders extends TestBase {
         pages.pointOfSale().barChart.click();
 
 
+    }
+    @Test
+    public void lineChartResult()throws InterruptedException{
+        chooseStatementsOfSales();
+        extentLogger = report.createTest("Line Chart Result Test");
+        extentLogger.info(" Click On The LineChart Button ");
+        pages.pointOfSale().lineChart.click();
+    }
+    @Test
+    public void pieChartResult()throws InterruptedException {
+        chooseStatementsOfSales();
+        extentLogger = report.createTest("Pie Chart Result Test");
+        extentLogger.info(" Click On The PieChart Button ");
+        pages.pointOfSale().pieChart.click();
+    }
+    @Test
+    public void graphResult()throws InterruptedException {
+        chooseStatementsOfSales();
+        extentLogger = report.createTest("Graph Result Test");
+        extentLogger.info(" Click On The Graph Button ");
+        pages.pointOfSale().graph.click();
+    }
+    @Test
+    public void pivotResult()throws InterruptedException {
+        chooseStatementsOfSales();
+        extentLogger = report.createTest("Pivot Result Test");
+        extentLogger.info(" Click On The Pivot Button ");
+        pages.pointOfSale().pivot.click();
+    }
+    @Test
+    public void flipResult()throws InterruptedException {
+       pivotResult();
+        extentLogger = report.createTest("Flip Axis Result Test");
+        extentLogger.info(" Click On The Flip Button ");
+        pages.pointOfSale().flip.click();
+    }
+    @Test
+    public void expandAllResult()throws InterruptedException {
+        pivotResult();
+        extentLogger = report.createTest("Expand All Result Test");
+        extentLogger.info(" Click On The Expand Button ");
+        pages.pointOfSale().expand.click();
+    }
+    @Test
+    public void downloadExlResult()throws InterruptedException {
+        pivotResult();
+        extentLogger = report.createTest("Download Exl Result Test");
+        extentLogger.info(" Click On The Download Button ");
+        pages.pointOfSale().download.click();
     }
 }
 
