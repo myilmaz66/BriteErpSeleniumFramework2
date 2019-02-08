@@ -17,7 +17,7 @@ public abstract class TestBase {
     protected WebDriver driver;
     protected Pages pages;
     protected Actions actions;
-    protected WebDriverWait webDriverWait;
+    protected WebDriverWait wait;
     protected static ExtentReports report;
     private static ExtentHtmlReporter htmlReporter;
     protected static ExtentTest extentLogger;
@@ -27,7 +27,7 @@ public abstract class TestBase {
     public void setupMethod() {
         driver = Driver.getDriver();
         pages = new Pages();
-        webDriverWait = new WebDriverWait(driver,100);
+        wait = new WebDriverWait(driver,40);
         actions = new Actions(driver);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();

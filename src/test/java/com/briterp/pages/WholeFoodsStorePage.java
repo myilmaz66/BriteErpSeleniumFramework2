@@ -14,7 +14,7 @@ public class WholeFoodsStorePage {
 
 
 
-    @FindBy(xpath = "//*[@class='button set-customer']")
+    @FindBy(xpath = "//button[@class='button set-customer ']")
     public WebElement customerButton;
 
     @FindBy(xpath = "//*[@placeholder='Search Customers']")
@@ -27,7 +27,31 @@ public class WholeFoodsStorePage {
     public WebElement setCustomer;
 
 
+    @FindBy(xpath = "(//*[@class='input-button number-char'])[5]")
+    public WebElement number5;
 
-   public String customerNameSearch = "Morgan Rose";
-//   public String customerNameSet = customerButton.getText();
+    @FindBy(xpath = "(//*[@class='input-button number-char'])[10]")
+    public WebElement number0;
+
+
+    @FindBy(xpath = "//*[contains(text(),'Honda')]")
+    public WebElement hondaAccord;
+
+    @FindBy (xpath = "//*[@class='order']")
+    public WebElement cart;
+
+    @FindBy (xpath = "//*[@data-mode='discount']")
+    public WebElement discountButton;
+
+
+    @FindBy (xpath = "//*[@data-mode='discount']")
+    public WebElement discountButtonGreen;
+
+
+
+
+
+//   public String customerNameSearch = "Morgan Rose";
+   //   public String customerNameSet = customerButton.getText();
+
 }
