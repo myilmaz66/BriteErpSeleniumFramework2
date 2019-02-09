@@ -122,9 +122,9 @@ public class PricelistsTest extends TestBase {
         Assert.assertEquals(updatedName, newPricelistName);
     }
 
-    @Test(priority = 0)
+    @Test(priority = 2)
     public void discardEditing() {
-        extentLogger = report.createTest("Discarding the editied Item Info Test");
+        extentLogger = report.createTest("Discarding the edited Item Info Test");
         extentLogger.info("Login");
         pages.odoo().briteErpDemo.click();
         pages.loginPage().positiveLogIn();
