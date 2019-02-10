@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class PricelistsTest extends TestBase {
     int itemsCount;
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     public void addAndDeleteItems() throws InterruptedException {
         extentLogger = report.createTest("Add and Delete Items in \"Pricelist Items\" field");
         extentLogger.info("Login");
@@ -72,7 +72,7 @@ public class PricelistsTest extends TestBase {
         Assert.assertEquals(pages.pricelistSaveDiscardPage().deleteSigns.size(), itemsCount - 1);
     }
 
-    @Test(priority = 1)
+    @Test(priority = 2)
     public void pricelistName() {
         extentLogger = report.createTest("Changing Pricelist Name Test");
         extentLogger.info("Login");
@@ -121,7 +121,7 @@ public class PricelistsTest extends TestBase {
         Assert.assertEquals(updatedName, newPricelistName);
     }
 
-    @Test(priority = 2)
+    @Test(priority = 3)
     public void discardEditing() {
         extentLogger = report.createTest("Discarding the edited Item Info Test");
         extentLogger.info("Login");
@@ -174,7 +174,7 @@ public class PricelistsTest extends TestBase {
         Assert.assertEquals(pages.pricelistEditCreate().pricelistItems.size() + "", itemsCount);
     }
 
-    @Test(priority = 3)
+    @Test(priority = 4)
     public void discardMessage() {
         extentLogger = report.createTest("Check the message after clicking on discard button Test");
         extentLogger.info("Login");
@@ -214,7 +214,7 @@ public class PricelistsTest extends TestBase {
         Assert.assertEquals(ApplicationConstants.DISCARD_MESSAGE, pages.pricelistSaveDiscardPage().discardMessage.getText());
     }
 
-    @Test(priority = 4)
+    @Test(priority = 5)
     public void backAndForwardArrow() {
         extentLogger = report.createTest(" Use back and forward arrows to change the pricelist Test");
         extentLogger.info("Login");
@@ -243,7 +243,7 @@ public class PricelistsTest extends TestBase {
         Assert.assertTrue(pages.pricelistEditCreate().pricelistName.getText().equals(pricelistName));
     }
 
-    @Test(priority = 5)
+    @Test(priority = 6)
     public void addACountry() {
         extentLogger = report.createTest("Add a country or continent in the \"Country Groups\" field Test");
         extentLogger.info("Login");

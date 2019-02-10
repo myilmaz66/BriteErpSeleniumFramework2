@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class ProductsTest extends TestBase {
-    @Test(priority = 6)
+    @Test(priority = 1)
     public void isAlphabetical() {
         extentLogger = report.createTest("Check if the products are listed alphabetically Test");
         extentLogger.info("Login");
@@ -28,7 +28,7 @@ public class ProductsTest extends TestBase {
         }
     }
 
-    @Test(priority = 7)
+    @Test(priority = 2)
     public void canbanListView() {
         extentLogger = report.createTest(" Create a new product Test");
         extentLogger.info("Login");
@@ -64,7 +64,7 @@ public class ProductsTest extends TestBase {
         Assert.assertTrue(pages.productsEditCreatePage().productName.getText().equals(newProductName));
     }
 
-    @Test(priority = 8)
+    @Test(priority = 3)
     public void createNewProduct() {
         extentLogger = report.createTest(" Switch the view of the products between \"Kanban\" and \"List\" Test");
         extentLogger.info("Login");
@@ -90,7 +90,7 @@ public class ProductsTest extends TestBase {
         Assert.assertTrue(pages.listViewPage().checkBox.isDisplayed());
     }
 
-    @Test(priority = 9)
+    @Test(priority = 4)
     public void productsFromOneToEighty() {
         extentLogger = report.createTest("Check if the page displays the products from 1 to 80 Test");
         extentLogger.info("Login");
