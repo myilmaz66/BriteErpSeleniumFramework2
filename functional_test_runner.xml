@@ -3,7 +3,7 @@
 
     <test name="TEST TEST">
         <classes>
-            <class name="com.briterp.tests.functional_test.configuration.pointofsale.">    <!--- just examle > -->
+            <class name="com.briterp.tests.functional_test.dashboard.WholeFoodsStore">    <!--- just examle > -->
 
             </class>
         </classes>
