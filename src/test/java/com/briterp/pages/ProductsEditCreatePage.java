@@ -5,12 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class PointOfSalePage {
-    public PointOfSalePage(){
+public class ProductsEditCreatePage {
+    public ProductsEditCreatePage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy (xpath = "//*[@class='ui-sortable']")
-    public WebElement table;
-
+    @FindBy(xpath = "//ol[@class='breadcrumb']//li[2]")
+    public WebElement productName;
 }

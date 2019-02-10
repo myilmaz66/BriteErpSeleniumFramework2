@@ -1,9 +1,7 @@
 package com.briterp.tests.functional_test.catalog.pricelists;
 
-import com.briterp.utilities.BrowserUtilities;
-import com.briterp.utilities.ConfigurationReader;
-import com.briterp.utilities.Driver;
-import com.briterp.utilities.TestBase;
+import com.briterp.pages.HomePage;
+import com.briterp.utilities.*;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -25,11 +23,12 @@ public class PricelistsTest extends TestBase {
         pages.loginPage().positiveLogIn();
 
         extentLogger.info("Click on \"point of sale\" link");
+        BrowserUtilities.wait(5);
         pages.discussModulePage().pointOfSale.click();
 
         extentLogger.info("Click on \"Pricelists\" link under \"Catalog\"");
         BrowserUtilities.wait(5);
-        pages.pricelists().pricelistsLink.click();
+        pages.pointOfSaleModulePage().pricelistsLink.click();
 
         extentLogger.info("Click on any pricelist name");
         pages.pricelists().priceListNames.get(randomNumber(0, pages.pricelists().priceListNames.size() - 1)).click();
@@ -86,7 +85,7 @@ public class PricelistsTest extends TestBase {
 
         extentLogger.info("Click on \"Pricelists\" link under \"Catalog\"");
         BrowserUtilities.waitForPageToLoad(2);
-        pages.pricelists().pricelistsLink.click();
+        pages.pointOfSaleModulePage().pricelistsLink.click();
 
         extentLogger.info("Click on any pricelist name");
         BrowserUtilities.wait(2);
@@ -108,7 +107,7 @@ public class PricelistsTest extends TestBase {
         Assert.assertEquals(pages.pricelistEditCreate().pricelistName.getText(), newPricelistName);
 
         extentLogger.info(" Click on \"Pricelists\" link");
-        pages.pricelists().pricelistsLink.click();
+        pages.pointOfSaleModulePage().pricelistsLink.click();
         BrowserUtilities.wait(2);
 
         extentLogger.info("Verify that pricelist name table includes updated name ");
@@ -135,16 +134,15 @@ public class PricelistsTest extends TestBase {
 
         extentLogger.info("Click on \"Pricelists\" link under \"Catalog\"");
         BrowserUtilities.waitForPageToLoad(2);
-        pages.pricelists().pricelistsLink.click();
+        pages.pointOfSaleModulePage().pricelistsLink.click();
 
         extentLogger.info("Click on any pricelist name");
         pages.pricelists().priceListNames.get(randomNumber(0, pages.pricelists().priceListNames.size() - 1)).click();
 
-
-        String pricelistName =pages.pricelistEditCreate().pricelistName.getText();
-        String eCommercePromotionalCode=pages.pricelistEditCreate().eCommercePromotionalCodeBox.getText();
+        String pricelistName = pages.pricelistEditCreate().pricelistName.getText();
+        String eCommercePromotionalCode = pages.pricelistEditCreate().eCommercePromotionalCodeBox.getText();
         String allowToUseOn = pages.pricelistEditCreate().selectedAllowToUseOn.getText();
-        String itemsCount = pages.pricelistEditCreate().pricelistItems.size()+"";
+        String itemsCount = pages.pricelistEditCreate().pricelistItems.size() + "";
 
         extentLogger.info("Click on \"Edit\" button");
         pages.pricelistEditCreate().editButton.click();
@@ -170,11 +168,239 @@ public class PricelistsTest extends TestBase {
         pages.pricelistSaveDiscardPage().okButton.click();
 
         extentLogger.info("Verify that previous info did not change for the Pricelist item");
-        Assert.assertEquals(pages.pricelistEditCreate().pricelistName.getText(),pricelistName);
-        Assert.assertEquals(pages.pricelistEditCreate().eCommercePromotionalCodeBox.getText(),eCommercePromotionalCode);
-        Assert.assertEquals(pages.pricelistEditCreate().selectedAllowToUseOn.getText(),allowToUseOn);
-        Assert.assertEquals(pages.pricelistEditCreate().pricelistItems.size()+"",itemsCount);
+        Assert.assertEquals(pages.pricelistEditCreate().pricelistName.getText(), pricelistName);
+        Assert.assertEquals(pages.pricelistEditCreate().eCommercePromotionalCodeBox.getText(), eCommercePromotionalCode);
+        Assert.assertEquals(pages.pricelistEditCreate().selectedAllowToUseOn.getText(), allowToUseOn);
+        Assert.assertEquals(pages.pricelistEditCreate().pricelistItems.size() + "", itemsCount);
+    }
+
+    @Test(priority = 3)
+    public void discardMessage() {
+        extentLogger = report.createTest("Check the message after clicking on discard button Test");
+        extentLogger.info("Login");
+        pages.odoo().briteErpDemo.click();
+        pages.loginPage().positiveLogIn();
+
+        extentLogger.info("Click on \"point of sale\" link");
+        BrowserUtilities.wait(5);
+        pages.discussModulePage().pointOfSale.click();
+
+        extentLogger.info("Click on \"Pricelists\" link under \"Catalog\"");
+        BrowserUtilities.waitForPageToLoad(2);
+        pages.pointOfSaleModulePage().pricelistsLink.click();
+
+        extentLogger.info("Click on any pricelist name");
+        pages.pricelists().priceListNames.get(randomNumber(0, pages.pricelists().priceListNames.size() - 1)).click();
+
+        String pricelistName = pages.pricelistEditCreate().pricelistName.getText();
+        String eCommercePromotionalCode = pages.pricelistEditCreate().eCommercePromotionalCodeBox.getText();
+
+        extentLogger.info("Click on \"Edit\" button");
+        pages.pricelistEditCreate().editButton.click();
+
+        extentLogger.info(" Change the name of the price list");
+        pages.pricelistSaveDiscardPage().pricelistName.clear();
+        Faker faker = new Faker();
+        String newPricelistName = faker.commerce().productName();
+        pages.pricelistSaveDiscardPage().pricelistName.sendKeys(newPricelistName);
+
+        extentLogger.info("Type a code into \"E-commerce Promotional Code\" field and click on discard button");
+        pages.pricelistSaveDiscardPage().eCommercePromotionalCodeBox.sendKeys("12070");
+
+        extentLogger.info("Click on \"discard\" button and then \"Ok\" button.");
+        pages.pricelistSaveDiscardPage().discardButton.click();
+
+        extentLogger.info("Verify that system displays the message");
+        Assert.assertEquals(ApplicationConstants.DISCARD_MESSAGE, pages.pricelistSaveDiscardPage().discardMessage.getText());
+    }
+
+    @Test(priority = 4)
+    public void backAndForwardArrow() {
+        extentLogger = report.createTest(" Use back and forward arrows to change the pricelist Test");
+        extentLogger.info("Login");
+        pages.odoo().briteErpDemo.click();
+        pages.loginPage().positiveLogIn();
+
+        extentLogger.info("Click on \"point of sale\" link");
+        BrowserUtilities.wait(4);
+        pages.discussModulePage().pointOfSale.click();
+
+        extentLogger.info("Click on \"Pricelists\" link under \"Catalog\"");
+        pages.pointOfSaleModulePage().pricelistsLink.click();
+
+        extentLogger.info("Click on any pricelist name");
+        pages.pricelists().priceListNames.get(randomNumber(0, pages.pricelists().priceListNames.size() - 1)).click();
+        String pricelistName = pages.pricelistEditCreate().pricelistName.getText();
+
+        extentLogger.info("Click on \"back arrow\" button and verify pricelist name is same as first one ");
+        pages.pricelistSaveDiscardPage().forwardArrowButton.click();
+        BrowserUtilities.wait(2);
+        Assert.assertTrue(!(pages.pricelistEditCreate().pricelistName.getText().equals(pricelistName)));
+
+        extentLogger.info("Verify that pricelist name is changing when clicking on forward and back arrow buttons");
+        pages.pricelistSaveDiscardPage().backArrowButton.click();
+        BrowserUtilities.wait(2);
+        Assert.assertTrue(pages.pricelistEditCreate().pricelistName.getText().equals(pricelistName));
+    }
+
+    @Test(priority = 5)
+    public void addACountry() {
+        extentLogger = report.createTest("Add a country or continent in the \"Country Groups\" field Test");
+        extentLogger.info("Login");
+        pages.odoo().briteErpDemo.click();
+        pages.loginPage().positiveLogIn();
+
+        extentLogger.info("Click on \"point of sale\" link");
+        BrowserUtilities.wait(4);
+        pages.discussModulePage().pointOfSale.click();
+
+        extentLogger.info("Click on \"Pricelists\" link under \"Catalog\"");
+        pages.pointOfSaleModulePage().pricelistsLink.click();
+
+        extentLogger.info("Click on any pricelist name");
+        pages.pricelists().priceListNames.get(randomNumber(0, pages.pricelists().priceListNames.size() - 1)).click();
+        String pricelistName = pages.pricelistEditCreate().pricelistName.getText();
+
+        extentLogger.info("Click on \"Edit\" button");
+        pages.pricelistEditCreate().editButton.click();
+
+        extentLogger.info("Go to \"Country Groups\" field and click on \"Add an item\" link");
+        pages.pricelistSaveDiscardPage().countryGropusAddItem.click();
+
+        extentLogger.info("Verify that none of the options are selected by default");
+        for (int i = 0; i < pages.countryGroupsPage().checkBoxes.size(); i++) {
+            Assert.assertFalse(pages.countryGroupsPage().checkBoxes.get(i).isSelected());
+        }
+
+        extentLogger.info("Select an option and click on \"Select\" button");
+        int randomNumber = randomNumber(0, pages.countryGroupsPage().checkBoxes.size() - 1);
+        pages.countryGroupsPage().checkBoxes.get(randomNumber).click();
+        String country = pages.countryGroupsPage().countryGroupsNames.get(randomNumber).getText();
+        pages.countryGroupsPage().selecButton.click();
 
 
+        extentLogger.info("Verify that selected item is displayed on the field after adding it from the list ");
+        String countryOnList = "";
+        BrowserUtilities.wait(2);
+        for (int i = 0; i < pages.pricelistSaveDiscardPage().countryGropusNames.size(); i++) {
+            if (pages.pricelistSaveDiscardPage().countryGropusNames.get(i).getText().equals(country)) {
+                countryOnList = pages.pricelistSaveDiscardPage().countryGropusNames.get(i).getText();
+                break;
+            }
+        }
+        Assert.assertEquals(country, countryOnList);
+    }
+
+
+    @Test(priority = 6)
+    public void isAlphabetical() {
+        extentLogger = report.createTest("Check if the products are listed alphabetically Test");
+        extentLogger.info("Login");
+        pages.odoo().briteErpDemo.click();
+        pages.loginPage().positiveLogIn();
+
+        extentLogger.info("Click on \"point of sale\" link");
+        BrowserUtilities.wait(4);
+        pages.discussModulePage().pointOfSale.click();
+
+        extentLogger.info("Click on \"Products\" link under \"Catalog\"");
+        pages.pointOfSaleModulePage().productsLink.click();
+
+        extentLogger.info("Verify that products are listed alphabetically ");
+        BrowserUtilities.wait(2);
+        for (int i = 0; i < pages.productsPage().productsNames.size() - 1; i++) {
+            Assert.assertTrue(pages.productsPage().productsNames.get(i).getText().compareTo(pages.productsPage().productsNames.get(i + 1).getText()) <= 0);
+        }
+    }
+
+    @Test(priority = 7)
+    public void canbanListView() {
+        extentLogger = report.createTest(" Create a new product Test");
+        extentLogger.info("Login");
+        pages.odoo().briteErpDemo.click();
+        pages.loginPage().positiveLogIn();
+
+        extentLogger.info("Click on \"point of sale\" link");
+        BrowserUtilities.wait(4);
+        pages.discussModulePage().pointOfSale.click();
+
+        extentLogger.info("Click on \"Products\" link under \"Catalog\"");
+        pages.pointOfSaleModulePage().productsLink.click();
+
+        extentLogger.info("Click on create button");
+        pages.productsPage().createButton.click();
+
+        extentLogger.info("Put a product name into the product name field");
+        Faker faker = new Faker();
+        String newProductName = faker.commerce().productName();
+        pages.productsSaveDiscardPage().productNameBox.sendKeys(newProductName);
+
+        extentLogger.info("Verify that \"can be purchased\" and \"can be sold\" options are checked by default");
+        Assert.assertTrue(pages.productsSaveDiscardPage().canBeSoldCheckBox.isSelected());
+        Assert.assertTrue(pages.productsSaveDiscardPage().canBePurchasedCheckBox.isSelected());
+
+        extentLogger.info("Click on \"Save\" button.");
+        pages.productsSaveDiscardPage().saveButton.click();
+
+        extentLogger.info("Verify that product name is displayed in upper left corner and matches with the one user put");
+        Assert.assertTrue(pages.productsEditCreatePage().productName.isDisplayed());
+        BrowserUtilities.wait(1);
+        Assert.assertTrue(pages.productsEditCreatePage().productName.getText().equals(newProductName));
+    }
+
+    @Test(priority = 8)
+    public void createNewProduct() {
+        extentLogger = report.createTest(" Switch the view of the products between \"Kanban\" and \"List\" Test");
+        extentLogger.info("Login");
+        pages.odoo().briteErpDemo.click();
+        pages.loginPage().positiveLogIn();
+
+        extentLogger.info("Click on \"point of sale\" link");
+        BrowserUtilities.wait(4);
+        pages.discussModulePage().pointOfSale.click();
+
+        extentLogger.info("Click on \"Products\" link under \"Catalog\"");
+        pages.pointOfSaleModulePage().productsLink.click();
+
+        extentLogger.info("Verify that products are listed as Kanban by default");
+        BrowserUtilities.waitForVisibility(pages.productsPage().productPicture, 5);
+        Assert.assertTrue(pages.productsPage().productPicture.isDisplayed());
+        Assert.assertTrue(pages.productsPage().firstProductName.isDisplayed());
+
+        extentLogger.info("Click on \"List\" sign ");
+        pages.productsPage().listButton.click();
+
+        extentLogger.info("Verify that the view of the products has changed from kanban to List ");
+        Assert.assertTrue(pages.listViewPage().checkBox.isDisplayed());
+    }
+
+    @Test(priority = 9)
+    public void productsFromOneToEighty() {
+        extentLogger = report.createTest("Check if the page displays the products from 1 to 80 Test");
+        extentLogger.info("Login");
+        pages.odoo().briteErpDemo.click();
+        pages.loginPage().positiveLogIn();
+
+        extentLogger.info("Click on \"point of sale\" link");
+        BrowserUtilities.wait(4);
+        pages.discussModulePage().pointOfSale.click();
+
+        extentLogger.info("Click on \"Products\" link under \"Catalog\"");
+        pages.pointOfSaleModulePage().productsLink.click();
+
+        extentLogger.info("Verify that the products are listed from 1 to 80");
+        Assert.assertTrue(pages.productsPage().productsNamesSize.size() == 80);
+        Assert.assertEquals(pages.productsPage().pagerValue.getText(), "1-80");
+
+        extentLogger.info("Click on next arrow button");
+        pages.pricelistSaveDiscardPage().forwardArrowButton.click();
+
+        extentLogger.info("verify if the numbers interval is changed from 81 to 160 or last product's number");
+        int productTotalCount = Integer.parseInt(pages.productsPage().productTotalCount.getText());
+        if (productTotalCount < 160) {
+            Assert.assertEquals(pages.productsPage().pagerValue.getText(), "81-"+productTotalCount);
+        } else {
+            Assert.assertEquals(pages.productsPage().pagerValue.getText(), "81-160");
+        }
     }
 }

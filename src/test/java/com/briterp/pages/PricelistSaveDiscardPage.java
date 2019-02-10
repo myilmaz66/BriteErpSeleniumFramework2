@@ -39,6 +39,23 @@ public class PricelistSaveDiscardPage {
     @FindBy(xpath = "//h1/input")
     public WebElement pricelistName;
 
+    @FindBy(xpath = "//div[contains(@class,'modal-body')]")
+    public WebElement discardMessage;
+
+    @FindBy(xpath = "//div[contains(@class,'btn-group o_search_options')]/following-sibling::div//button[2]")
+    public WebElement forwardArrowButton;
+
+    @FindBy(xpath = "//div[contains(@class,'btn-group o_search_options')]/following-sibling::div//button[1]")
+    public WebElement backArrowButton;
+
+    @FindBy(xpath = "//div[@name='country_group_ids']//tbody//a")
+    public WebElement countryGropusAddItem;
+
+    @FindBy(xpath = "//div[@name='country_group_ids']//thead//following-sibling::tbody/tr")
+    public List<WebElement> countryGropusNames;
+
+
+
 
 
 
