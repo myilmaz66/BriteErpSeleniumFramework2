@@ -7,6 +7,7 @@
     <groupId>com.briterp</groupId>
     <artifactId>BriteErpSeleniumFramework2</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -36,11 +37,13 @@
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
             <version>4.0.6</version>
+            <scope>test</scope>
         </dependency>
+
         <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.14.3</version>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>0.16</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -49,6 +52,13 @@
             <version>4.0.6</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>0.16</version>
+        </dependency>
+
 
     </dependencies>
 

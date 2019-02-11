@@ -112,7 +112,7 @@ public class BrowserUtilities extends TestBase {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    public static WebElement waitForClickablility(WebElement element, int timeout) {
+    public static WebElement waitForClickablility(WebElement element,int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), timeout);
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
@@ -149,6 +149,18 @@ public class BrowserUtilities extends TestBase {
             }
         });
         return element;
+    }
+
+    /**
+     * Explicit Wait for the element's text verification, simplified
+     * @param element           WebElement requested to check for the text
+     * @param expected          String of the expected text requested
+     * @param seconds           int number of secods to wait
+     * @return                  boolean, that can be used within a conditional statement
+     */
+    public static boolean isElementsTextAMatch(WebElement element, String expected, int seconds) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), seconds);
+        return wait.until(ExpectedConditions.textToBePresentInElement(element, expected));
     }
 
     /**
