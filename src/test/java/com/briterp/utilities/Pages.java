@@ -8,7 +8,8 @@ public class Pages {
     private OdooFirstPage odooFirstPage;
     private LoginPage loginPage;
     private DiscussModulePage discussModulePage;
-    private PointOfSale pointOfSale;
+    private PointOfSalePage pointOfSalePage;
+    private PricelistsPage pricelistsPage;
     private OrdersPage orderspage;
 
     public OdooFirstPage odoo() {
@@ -36,13 +37,21 @@ public class Pages {
 
     }
 
-    public PointOfSale pointOfSale() {
-        if (pointOfSale == null) {
-            pointOfSale = new PointOfSale();
+    public PointOfSalePage pointOfSale(){
+        if(pointOfSalePage ==null) {
+            pointOfSalePage = new PointOfSalePage();
         }
-        return pointOfSale;
+        return pointOfSalePage;
 
     }
+
+    public PricelistsPage pricelists(){
+        if(pricelistsPage ==null){
+            pricelistsPage = new PricelistsPage();
+        }
+        return pricelistsPage;
+    }
+
 
     public OrdersPage orders() {
         if (orderspage == null) {

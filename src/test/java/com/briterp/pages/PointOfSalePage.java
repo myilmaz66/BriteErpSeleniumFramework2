@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class PointOfSale {
-    public PointOfSale(){
+public class PointOfSalePage {
+    public PointOfSalePage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
     @FindBy(xpath = "//*[@data-menu='491']")
