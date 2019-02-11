@@ -120,6 +120,7 @@ public class Pages {
         return createPricelistItemsPage;
     }
 
+
     public PricelistSaveDiscardPage pricelistSaveDiscardPage() {
         if (pricelistSaveDiscardPage == null) {
             pricelistSaveDiscardPage = new PricelistSaveDiscardPage();
