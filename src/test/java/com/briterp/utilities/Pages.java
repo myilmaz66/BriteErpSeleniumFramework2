@@ -8,7 +8,6 @@ public class Pages {
     private OdooFirstPage odooFirstPage;
     private LoginPage loginPage;
     private DiscussModulePage discussModulePage;
-    private PointOfSalePage pointOfSalePage;
     private PricelistsPage pricelistsPage;
     private OrdersPage orderspage;
     private PricelistEditCreatePage pricelistEditCreatePage;
@@ -20,6 +19,23 @@ public class Pages {
     private ProductsSaveDiscardPage productsSaveDiscardPage;
     private ProductsEditCreatePage productsEditCreatePage;
     private ListViewPage listViewPage;
+    private PoSCategoriesPage posCategoriesPage;
+    private PointOfSale pointOfSale;
+
+    public PointOfSale pointOfSale() {
+        if (pointOfSale == null) {
+            pointOfSale = new PointOfSale();
+        }
+        return pointOfSale;
+    }
+
+    public PoSCategoriesPage poSCategoriesPage(){
+        if (posCategoriesPage == null) {
+            posCategoriesPage = new PoSCategoriesPage();
+        }
+        return posCategoriesPage;
+    }
+
 
     public ListViewPage listViewPage() {
         if (listViewPage == null) {
@@ -82,13 +98,6 @@ public class Pages {
             discussModulePage = new DiscussModulePage();
         }
         return discussModulePage;
-    }
-
-    public PointOfSalePage pointOfSale() {
-        if (pointOfSalePage == null) {
-            pointOfSalePage = new PointOfSalePage();
-        }
-        return pointOfSalePage;
     }
 
     public PricelistsPage pricelists() {

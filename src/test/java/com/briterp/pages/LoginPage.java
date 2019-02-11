@@ -29,6 +29,9 @@ public class LoginPage {
     @FindBy(xpath = "//*[@class='alert alert-danger']")
     public WebElement errorMessage;
 
+    @FindBy(xpath = "//*[@class='btn btn-primary']")
+    public WebElement signInButton;
+
 
     public void positiveLogIn() {
         emailBox.sendKeys(ConfigurationReader.getProperty("username"));
