@@ -16,7 +16,7 @@ import java.util.NoSuchElementException;
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 
-public class BrowserUtilities extends TestBase {
+public class BrowserUtilities {
 
     public static void wait(int secs) {
         try {
