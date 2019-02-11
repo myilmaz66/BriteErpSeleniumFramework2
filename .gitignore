@@ -1,2 +1,7 @@
 .idea/
+<<<<<<< HEAD
 target/
+.idea/workspace.xml
+=======
+target/
+>>>>>>> master

@@ -70,6 +70,7 @@ public class SmokeTest extends TestBase {
 
     }
 
+
     @Test(priority = 3)
     public void VisibilityAndClickability() throws InterruptedException {
         extentLogger = report.createTest("Visibility Abd Clickability");
