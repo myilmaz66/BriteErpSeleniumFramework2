@@ -18,7 +18,7 @@ public class LoginPage {
     }
 
     @FindBy(id = "login")
-    public WebElement emailBox;
+   public WebElement emailBox;
 
     @FindBy(id = "password")
     public WebElement passwordBox;
