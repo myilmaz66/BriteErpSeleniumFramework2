@@ -10,6 +10,6 @@ public class OrdersPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//button[@class='btn btn-primary btn-sm dropdown-toggle']")
+    @FindBy(xpath = "//div[@class='o_sub_menu_content']/div[8]/ul[1]/li[1]/a[1]/span[1]")
     public WebElement measuresButton;
 }

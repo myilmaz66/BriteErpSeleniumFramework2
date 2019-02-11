@@ -20,6 +20,15 @@ public class Pages {
     private ProductsSaveDiscardPage productsSaveDiscardPage;
     private ProductsEditCreatePage productsEditCreatePage;
     private ListViewPage listViewPage;
+    private PoSCategoriesPage posCategoriesPage;
+
+    public PoSCategoriesPage poSCategoriesPage(){
+        if (posCategoriesPage == null) {
+            posCategoriesPage = new PoSCategoriesPage();
+        }
+        return posCategoriesPage;
+    }
+
 
     public ListViewPage listViewPage() {
         if (listViewPage == null) {
