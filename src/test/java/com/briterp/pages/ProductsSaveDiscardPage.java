@@ -19,6 +19,9 @@ public class ProductsSaveDiscardPage {
     @FindBy(xpath = "(//div[@class='o_field_boolean o_field_widget o_checkbox']//input)[2]")
     public WebElement canBePurchasedCheckBox;
 
+    @FindBy(xpath = "(//div[@class='o_field_boolean o_field_widget o_checkbox']//input)[3]")
+    public WebElement canBeExpensedCheckBox;
+
     @FindBy(xpath = "//div[@class='o_form_buttons_edit']//button[@type='button'][contains(text(),'Save')]")
     public WebElement saveButton;
 

@@ -79,7 +79,8 @@ public class ProductsTest extends TestBase {
         pages.pointOfSaleModulePage().productsLink.click();
 
         extentLogger.info("Verify that products are listed as Kanban by default");
-        BrowserUtilities.waitForVisibility(pages.productsPage().productPicture, 5);
+      //  BrowserUtilities.waitForVisibility(pages.productsPage().productPicture, 6);
+        BrowserUtilities.wait(4);
         Assert.assertTrue(pages.productsPage().productPicture.isDisplayed());
         Assert.assertTrue(pages.productsPage().firstProductName.isDisplayed());
 

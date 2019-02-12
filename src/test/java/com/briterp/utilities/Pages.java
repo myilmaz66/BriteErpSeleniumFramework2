@@ -1,6 +1,7 @@
 package com.briterp.utilities;
 
 import com.briterp.pages.*;
+import com.briterp.tests.functional_test.catalog.products.Products_New_Page;
 
 
 public class Pages {
@@ -21,7 +22,41 @@ public class Pages {
     private ListViewPage listViewPage;
     private PoSCategoriesPage posCategoriesPage;
     private PointOfSale pointOfSale;
+    private ProductPage productPage;
+    private Products_New_Page products_new_page;
+    private Orders2Page orders2page;
+    private OrderlistsPage orderlistpage;
 
+    public Orders2Page orders2Page() {
+        if (orders2page == null) {
+            orders2page = new Orders2Page();
+        }
+        return orders2page;
+
+    }
+
+    public  OrderlistsPage orderListPage(){
+        if (orderlistpage == null){
+            orderlistpage = new OrderlistsPage();
+        }
+        return  orderlistpage;
+    }
+
+    public ProductPage productPage() {
+        if (productPage == null) {
+            productPage = new ProductPage();
+
+        }
+        return productPage;
+    }
+
+    public Products_New_Page products_new_page(){
+        if(products_new_page == null ){
+            products_new_page = new Products_New_Page();
+
+        }
+        return  products_new_page;
+    }
     public PointOfSale pointOfSale() {
         if (pointOfSale == null) {
             pointOfSale = new PointOfSale();

@@ -27,11 +27,14 @@ public class PoSCategoriesPage {
     public WebElement nameBox;
     @FindBy(xpath = "//*[@class='btn btn-primary btn-sm o_form_button_save']")
     public WebElement saveButton;
+
     @FindBy(xpath = "//*[@class='o_field_char o_field_widget o_required_modifier']")
     public WebElement widjetName;
-    @FindBy(xpath = "//*[@class='btn-group o_dropdown']")
+
+    @FindBy(xpath = "//button[contains(text(),'Action')]")
     public WebElement actionButton;
-    @FindBy(xpath = "//*[@data-section='other'")
+
+    @FindBy(xpath = "//*[@data-section='other']")
     public WebElement deleteButton;
 
     public void positiveCheck() {

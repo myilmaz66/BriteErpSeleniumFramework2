@@ -27,10 +27,11 @@ public class PricelistsTest extends TestBase {
         pages.discussModulePage().pointOfSale.click();
 
         extentLogger.info("Click on \"Pricelists\" link under \"Catalog\"");
-        BrowserUtilities.wait(5);
+        BrowserUtilities.wait(6);
         pages.pointOfSaleModulePage().pricelistsLink.click();
 
         extentLogger.info("Click on any pricelist name");
+        BrowserUtilities.wait(3);
         pages.pricelists().priceListNames.get(randomNumber(0, pages.pricelists().priceListNames.size() - 1)).click();
 
         extentLogger.info("Click on \"Edit\" button");
@@ -88,7 +89,7 @@ public class PricelistsTest extends TestBase {
         pages.pointOfSaleModulePage().pricelistsLink.click();
 
         extentLogger.info("Click on any pricelist name");
-        BrowserUtilities.wait(2);
+        BrowserUtilities.wait(4);
         pages.pricelists().priceListNames.get(randomNumber(0, pages.pricelists().priceListNames.size() - 1)).click();
 
         extentLogger.info("Click on \"Edit\" button");
