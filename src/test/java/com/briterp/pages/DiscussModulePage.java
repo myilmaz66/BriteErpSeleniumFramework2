@@ -19,5 +19,8 @@ public class DiscussModulePage {
     @FindBy(xpath = "//*[@data-menu-xmlid='point_of_sale.menu_point_root']")
     public WebElement pointOfSale;
 
+    @FindBy (xpath = "//*[@data-name='open_ui']")
+    public WebElement resumeWholeFoodsStore;
+
 
 }
