@@ -3,9 +3,7 @@
 
     <test name="TEST TEST">
         <classes>
-            <class name="com.briterp.tests.functional_test.catalog.products.ProductsTest">    <!--- just examle > -->
-
-            </class>
+            <class name="com.briterp.tests.smoke_test.SmokeTest"/>    <!--- just examle > -->
         </classes>
     </test>
 

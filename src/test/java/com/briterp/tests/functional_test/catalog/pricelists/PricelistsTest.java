@@ -1,6 +1,7 @@
 package com.briterp.tests.functional_test.catalog.pricelists;
 
 import com.briterp.pages.HomePage;
+import com.briterp.pages.ProductPage;
 import com.briterp.utilities.*;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.WebElement;
@@ -63,7 +64,8 @@ public class PricelistsTest extends TestBase {
 
         extentLogger.info("Verify that item count is increased by 1");
         BrowserUtilities.wait(2);
-        itemsCount = pages.pricelistSaveDiscardPage().deleteSigns.size();
+
+        Assert.assertEquals(pages.pricelistSaveDiscardPage().deleteSigns.size(), itemsCount+1);
 
         extentLogger.info("Click on trash can sign ");
         pages.pricelistSaveDiscardPage().deleteSigns.get(pages.pricelistSaveDiscardPage().deleteSigns.size() - 1).click();
@@ -291,7 +293,6 @@ public class PricelistsTest extends TestBase {
         }
         Assert.assertEquals(country, countryOnList);
     }
-
 
 
 }
