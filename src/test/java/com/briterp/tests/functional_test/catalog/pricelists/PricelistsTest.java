@@ -295,4 +295,5 @@ public class PricelistsTest extends TestBase {
     }
 
 
+
 }
