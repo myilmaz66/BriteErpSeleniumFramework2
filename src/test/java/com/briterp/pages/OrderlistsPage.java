@@ -50,4 +50,8 @@ public class OrderlistsPage {
     @FindBy(xpath ="//input[@class='o_field_integer o_field_number o_field_widget o_input']")
     public  WebElement guestElementR;
 
+    public WebElement selectOrder(int i){
+        return orders.get(i);
+    }
+
 }
