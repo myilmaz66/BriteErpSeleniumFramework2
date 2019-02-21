@@ -70,7 +70,6 @@ public class SmokeTest extends TestBase {
 
     }
 
-
     @Test(priority = 3)
     public void VisibilityAndClickability() throws InterruptedException {
         extentLogger = report.createTest("Visibility Abd Clickability");
@@ -94,14 +93,14 @@ public class SmokeTest extends TestBase {
         Assert.assertEquals(driver.getTitle(),"Point of Sale - Odoo");
 
         extentLogger.info("Clicking on products button");
-        pages.pointOfSale().productsModuleButton.click();
+        pages.pointOfSaleModulePage().productsLink.click();
 
         extentLogger.info("Verifying Title");
-        Thread.sleep(4000);
+        Thread.sleep(7000);
         Assert.assertEquals(driver.getTitle(), "Products - Odoo");
 
         extentLogger.info("Clicking on point of Sale button");
-        pages.pointOfSale().pointOfSaleModuleButton.click();
+        pages.pointOfSaleModulePage().pointOfSaleLink.click();
         Thread.sleep(4000);
 
         extentLogger.info("Verifying Title");

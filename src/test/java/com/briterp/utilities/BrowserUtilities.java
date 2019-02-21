@@ -10,8 +10,8 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.*;
 import java.util.NoSuchElementException;
+import java.util.*;
 
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
@@ -112,7 +112,7 @@ public class BrowserUtilities {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    public static WebElement waitForClickablility(WebElement element, int timeout) {
+    public static WebElement waitForClickablility(WebElement element,int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), timeout);
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
@@ -149,6 +149,18 @@ public class BrowserUtilities {
             }
         });
         return element;
+    }
+
+    /**
+     * Explicit Wait for the element's text verification, simplified
+     * @param element           WebElement requested to check for the text
+     * @param expected          String of the expected text requested
+     * @param seconds           int number of secods to wait
+     * @return                  boolean, that can be used within a conditional statement
+     */
+    public static boolean isElementsTextAMatch(WebElement element, String expected, int seconds) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), seconds);
+        return wait.until(ExpectedConditions.textToBePresentInElement(element, expected));
     }
 
     /**

@@ -5,14 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.List;
-
-public class PricelistsPage {
-    public PricelistsPage() {
+public class Orders2Page {
+    public Orders2Page() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//table/tbody//td[3]")
-    public List<WebElement> priceListNames;
-
+    @FindBy(xpath = "//div[@class='o_sub_menu_content']/div[8]/ul[1]/li[1]/a[1]/span[1]")
+    public WebElement ordersLink;
 }

@@ -2,20 +2,12 @@ package com.briterp.tests.functional_test.orders.orders;
 
 import com.briterp.utilities.BrowserUtilities;
 import com.briterp.utilities.ConfigurationReader;
-import com.briterp.utilities.Driver;
 import com.briterp.utilities.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 public class orderFunctionalTests extends TestBase {
 
@@ -73,7 +65,7 @@ public class orderFunctionalTests extends TestBase {
 
         extentLogger.info("Click on random order from list");
         BrowserUtilities.wait(5);
-        int i = BrowserUtilities.randomNumber(0, pages.orderListPage().ordersEdit.size() - 1);
+        int i = randomNumber(0, pages.orderListPage().ordersEdit.size() - 1);
         WebElement randomOrder = pages.orderListPage().ordersEdit.get(i);
         randomOrder.click();
 
@@ -132,7 +124,7 @@ public class orderFunctionalTests extends TestBase {
 
         extentLogger.info("Click on delete icon");
         BrowserUtilities.wait(5);
-        WebElement deleteElement = pages.orderListPage().deleteIcons.get(BrowserUtilities.randomNumber(0, (pages.orderListPage().deleteIcons.size() - 1)));
+        WebElement deleteElement = pages.orderListPage().deleteIcons.get(randomNumber(0, (pages.orderListPage().deleteIcons.size() - 1)));
         deleteElement.click();
 
         extentLogger.info("Click on \"Save\" ");
